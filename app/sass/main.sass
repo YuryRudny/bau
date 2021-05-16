@@ -1,0 +1,2166 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+body
+	font-size: 18px
+	overflow-x: hidden
+.accent_bg
+	background-color: $accent
+.icon 
+	display: inline-block
+	width: 1em
+	height: 1em
+	fill: currentColor
+::placeholder
+	color: #999
+	font-size: 14px
+	font-weight: normal
+	pointer-events: none
+	transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1)
+	margin: 0
+.mb-20
+	margin-bottom: 20px
+.mb-30
+	margin-bottom: 30px
+.mb-40
+	margin-bottom: 40px
+.mb-50
+	margin-bottom: 50px
+.mb-60
+	margin-bottom: 60px
+.mt-20
+	margin-top: 20px
+.mt-30
+	margin-top: 30px
+.mt-40
+	margin-top: 40px
+.mt-50
+	margin-top: 50px
+.mt-60
+	margin-top: 60px
+.pt-20
+	padding-top: 20px
+.pt-30
+	padding-top: 30px
+.pt-40
+	padding-top: 40px
+.pt-50
+	padding-top: 50px
+.pt-60
+	padding-top: 60px
+.pt-70
+	padding-top: 70px
+.pt-80
+	padding-top: 80px
+.pt-90
+	padding-top: 90px
+.pt-100
+	padding-top: 100px
+.pb-20
+	padding-bottom: 20px
+.pb-30
+	padding-bottom: 30px
+.pb-40
+	padding-bottom: 40px
+.pb-50
+	padding-bottom: 50px
+.pb-60
+	padding-bottom: 60px
+.pb-70
+	padding-bottom: 70px
+.pb-80
+	padding-bottom: 80px
+.pb-90
+	padding-bottom: 90px
+.pb-100
+	padding-bottom: 100px
+.p-0
+	padding: 0!important
+textarea.form-control
+	border: none
+	position: relative
+	resize: none
+	margin-bottom: 0
+	border-bottom: 1px solid #CBD5DD
+	padding-left: 0
+	border-radius: 0 !important
+	&:focus
+		border: none
+.popap_title
+	font-size: 24px
+	font-weight: 700
+	margin-top: 0
+	color: #222
+	font-family: 'Montserrat', sans-serif
+	text-align: center
+.form-group
+	&.checkbox-field
+		.text-small
+			display: flex
+			justify-content: flex-start
+			align-items: flex-start
+		.checkbox-title
+			line-height: 1.3
+			a
+				color: $accent
+				text-decoration: underline
+				position: relative
+		.custom-check
+			top: 2px
+	.custom-check:before
+		left: 0px
+
+.ui-input-group>textarea:focus~.input-bar:before,
+.ui-input-group>textarea:focus~.input-bar:after
+	width: 50%
+
+
+.before_bg
+	position: relative
+	z-index: 4
+	color: #fff
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	h2
+		color: #fff
+	&::before
+		content: ''
+		position: absolute
+		z-index: 0
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		background-color: rgba(#000, .6)
+.header-1 
+	.logo
+		height: 100%
+		display: flex
+		align-items: center
+		a
+			padding: 0
+.navigation>ul>li>span 
+	display: block
+	padding: 30px 16px
+	color: #fff
+	transition: all 0.25s ease 0s
+	outline: none
+	font-family: 'Raleway', sans-serif
+	font-weight: 600
+	text-transform: uppercase
+	font-size: 13px
+.header ul li.active
+	>a, >span
+		color: $accent
+.header_tran .navigation .sub-nav
+	width: max-content
+.sub-nav
+	a, span
+		color: #fff!important
+.footer .link span
+	font-size: 12px
+	font-weight: 400
+	text-transform: uppercase
+	color: #7f7f7f
+.footer_menu li.active
+	a, span
+		color: $accent
+.top-bar-section
+	min-height: 49px
+.btn-dark
+	background-color: #000
+.btn-text .btn-dark_text
+	color: #222
+.button_center
+	text-align: center
+.first_word
+	span
+		color: $accent
+.menu
+	display: none
+.heading-box
+	text-align: center
+	margin-bottom: 50px
+h2
+	text-transform: none
+.header_tran .top-bar-section.top-bar-bg-color span
+	color: #fff
+	i
+		color: $accent
+.tp-caption
+	max-width: 1140px!important
+.main-banner
+	.banner-text
+		h2
+			text-transform: none
+			font-size: 50px!important
+			white-space: nowrap
+			font-weight: bold!important			
+			strong
+				font-size: 50px!important
+				display: block
+				font-weight: bold!important
+				color: $accent
+		p
+			font-size: 20px!important
+			line-height: 1.2 !important
+.call-back_section, .contact_block-text
+	color: #fff
+	p
+		color: #fff
+	.row
+		padding: 15px 0
+.contact_block-text-footer
+	color: #222
+	p
+		color: #222
+.main-banner, .rev_slider_wrapper
+	max-height: calc(100vh - 73px)!important
+.slotholder:before
+	background-color: rgba(#000, .6)
+.about_section
+	padding: 90px 0
+.about_box p
+	margin-bottom: 50px
+.advantages_section
+	padding: 90px 0px
+	background-size: cover
+	background-attachment: fixed
+	background-repeat: no-repeat
+.advantages_row
+	padding: 0 
+.advantages_cart
+	font-size: 16px
+	text-align: center
+	line-height: 19px
+	width: 20%
+	padding: 0 15px
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	align-items: center
+	svg
+		fill: none
+		stroke: $accent
+		stroke-width: 2px
+		margin-bottom: 10px
+	p
+		color: #fff
+.advantages_cart.digger
+	svg
+		width: 170px
+		height: 90px
+.advantages_cart.tipper
+	svg
+		width: 170px
+		height: 90px
+.advantages_cart.clock
+	svg
+		width: 124px
+		height: 92px
+.advantages_cart.agent
+	svg
+		width: 158px
+		height: 105px
+.advantages_cart.present
+	svg
+		width: 101px
+		height: 81px
+
+.about_comp
+	display: flex
+	flex-direction: column
+	height: 100%
+	align-items: flex-start
+	padding-bottom: 84px
+	a
+		margin-top: auto
+.fact-counter-wrapper
+	.single-fact
+		display: flex
+		height: 100%
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		svg
+			margin-bottom: 10px
+			height: 68px
+.sand-description_section
+	padding: 90px 0 60px 0
+	figure
+		text-align: center
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		height: 100%
+	figcaption
+		flex-grow: 1
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		.btn-text
+			margin-top: auto
+			align-self: center
+	.tabs__header
+		display: flex
+		justify-content: center
+		margin-left: -15px
+		margin-right: -15px
+		margin-bottom: 60px
+		li
+			list-style-type: none
+			margin-left: 15px
+			margin-right: 15px
+			margin-bottom: 15px
+			cursor: pointer
+			&.active
+				background-color: #222
+				color: #fff!important
+	.tabs__content
+		.row
+			justify-content: center
+.sand-reserve_section
+	padding: 180px 0 200px 0
+	background-image: url(../img/backgrounds/8--pre-min.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+.sand-reserve_text
+	text-align: center
+	font-size: 25px
+	&>strong
+		display: block
+		font-weight: bold
+		font-size: 70px
+		line-height: 90px
+		margin-bottom: 30px
+.car-park_section
+	padding: 90px 0
+.car-park_cart
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	padding: 70px 10px 60px 10px
+	margin-bottom: 30px
+	position: relative
+	z-index: 1
+	color: #fff
+	p
+		position: relative
+		z-index: 2
+		text-align: center
+		strong
+			display: block
+			font-size: 70px
+			line-height: 80px
+	&::after
+		content: ''
+		position: absolute
+		z-index: 0
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		background-color: rgba(#000, .6)
+		z-index: 0
+.project_section
+	padding: 90px 0
+.more_btn__block
+	font-weight: normal
+.project__box
+	&:hover
+		.project__box_details
+			transform: translate(-50%, 0px)
+.project__box_details
+	transform: translate(-50%, 80px)
+	left: 50%
+// .st2
+// 	cursor: pointer
+// 	transition: all .2s ease
+// 	&:hover
+// 		fill: rgba(241, 200, 69, .6)!important
+.map_section
+	padding: 40px 0
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	text
+		font-family: "MyriadPro", sans-serif!important
+	.cls-1, .cls-22, .cls-8
+		fill: #fff
+	.cls-2, .cls-5
+		transition: all .4s ease
+		cursor: pointer
+		&:hover
+			fill: rgba(241, 200, 69, .6)
+			
+	.cls-2, .cls-4
+		fill: #f1c845
+		stroke-linecap: round
+		stroke-linejoin: round
+
+	.cls-2, .cls-5
+		stroke: #fff
+
+	.cls-2, .cls-4, .cls-5
+		stroke-width: 2px
+	.cls-4
+		stroke: #f1c946
+
+	.cls-5
+		fill: #f1c946
+
+	.cls-6
+		font-size: 27.46px
+		fill: #d14b44
+
+	.cls-11, .cls-6, .cls-8
+		font-family: Geometria-Bold, Geometria Bold
+		font-weight: 700
+
+	.cls-7
+		fill: #556caf
+
+	.cls-8
+		font-size: 11.44px
+
+	.cls-9
+		letter-spacing: 0em
+
+	.cls-10
+		fill: #d24a43
+
+	.cls-11, .cls-23, .cls-33, .cls-43, .cls-45
+		font-size: 16px
+
+	.cls-11
+		fill: #201600
+
+	.cls-12
+		letter-spacing: 0.01em
+
+	.cls-13
+		letter-spacing: 0em
+
+	.cls-14
+		letter-spacing: -0.01em
+
+	.cls-15
+		letter-spacing: 0.01em
+
+	.cls-16
+		letter-spacing: 0em
+
+	.cls-17
+		letter-spacing: -0.02em
+
+	.cls-18
+		letter-spacing: -0.09em
+
+	.cls-19, .cls-20
+		letter-spacing: 0em
+
+	.cls-21
+		letter-spacing: -0.01em
+
+	.cls-22
+		fill-rule: evenodd
+
+	.cls-23, .cls-33, .cls-43, .cls-45
+		fill: #181b1b
+		font-family: Geometria
+
+	.cls-24, .cls-45
+		letter-spacing: 0em
+
+	.cls-25, .cls-26
+		letter-spacing: -0.03em
+
+	.cls-27
+		letter-spacing: 0em
+
+	.cls-28
+		letter-spacing: 0.02em
+
+	.cls-29
+		letter-spacing: 0.01em
+
+	.cls-30
+		letter-spacing: -0.01em
+
+	.cls-31
+		letter-spacing: 0.01em
+
+	.cls-32
+		letter-spacing: -0.01em
+
+	.cls-33, .cls-35, .cls-34
+		letter-spacing: 0em
+
+	.cls-36
+		letter-spacing: -0.02em
+
+	.cls-37, .cls-38
+		letter-spacing: 0em
+
+	.cls-39, .cls-40
+		letter-spacing: -0.01em
+
+	.cls-41, .cls-42
+		letter-spacing: 0.01em
+
+	.cls-43
+		letter-spacing: -0.07em
+
+	.cls-44
+		letter-spacing: -0.02em
+
+	.cls-46
+		letter-spacing: 0em
+
+	.cls-47
+		letter-spacing: -0.05em
+
+	.cls-48
+		letter-spacing: 0.01em
+
+	.cls-49
+		letter-spacing: 0.02em
+
+	.cls-50
+		letter-spacing: -0.01em
+
+	.cls-51
+		filter: url(#luminosity-noclip)
+	// .st0
+	// 	display: none
+
+	// .st1
+	// 	display: inline
+	// 	fill-rule: evenodd
+	// 	clip-rule: evenodd
+	// 	fill: #9D9D9F
+
+	// .st2
+	// 	fill: #E0ECC7
+
+	// .st3
+	// 	display: inline
+	// 	fill: #BDD89A
+
+	// .st4
+	// 	display: inline
+	// 	fill: #F1C946
+	// 	stroke: #FFFFFF
+	// 	stroke-width: 2
+
+	// .st5
+	// 	display: none
+	// 	fill: #F1C845
+	// 	stroke: #FFFFFF
+	// 	stroke-width: 2
+	// 	stroke-linecap: round
+	// 	stroke-linejoin: round
+
+	// .st6
+	// 	fill: #F1C845
+	// 	stroke: #FFFFFF
+	// 	stroke-width: 2
+	// 	stroke-linecap: round
+	// 	stroke-linejoin: round
+	// 	cursor: pointer
+	// 	transition: all .3s ease
+	// 	&:hover
+	// 		fill: rgba(0,0,0,.2)
+	// .st7
+	// 	display: none
+	// 	fill: #F1C845
+	// 	stroke: #FFFFFF
+	// 	stroke-width: 2
+
+	// .st8
+	// 	filter: url(#Adobe_OpacityMaskFilter)
+
+	// .st9
+	// 	fill: #FFFFFF
+
+	// .st10
+	// 	mask: url(#���������_1_)
+	// 	fill: #F1C845
+	// 	stroke: #FFFFFF
+	// 	stroke-width: 2
+	// 	stroke-linecap: round
+	// 	stroke-linejoin: round
+	// 	cursor: pointer
+	// 	transition: all .3s ease
+	// 	&:hover
+	// 		fill: rgba(0,0,0,.2)
+
+	// .st11
+	// 	fill: #F1C845
+	// 	stroke: #F1C946
+	// 	stroke-width: 2
+	// 	stroke-linecap: round
+	// 	stroke-linejoin: round
+
+	// .st12
+	// 	fill: #F1C946
+	// 	stroke: #FFFFFF
+	// 	stroke-width: 2
+	// 	cursor: pointer
+	// 	transition: all .3s ease
+	// 	&:hover
+	// 		fill: rgba(0,0,0,.2)
+
+	// .st13
+	// 	display: none
+	// 	opacity: 0.22
+	// 	fill: #D65E5A
+
+	// .st14
+	// 	display: inline
+	// 	fill-rule: evenodd
+	// 	clip-rule: evenodd
+	// 	fill: #FFFFFF
+
+	// .st15
+	// 	display: inline
+
+	// .st16
+	// 	fill: #3EB5F1
+
+	// .st17
+	// 	fill: #D24A43
+
+	// .st18
+	// 	display: inline
+	// 	fill: none
+	// 	stroke: #C8C7C9
+	// 	stroke-width: 5
+	// 	stroke-linecap: round
+	// 	stroke-linejoin: round
+	// 	stroke-miterlimit: 10
+
+	// .st19
+	// 	display: inline
+	// 	fill: #566DAB
+
+	// .st20
+	// 	display: inline
+	// 	fill: #FFFFFF
+
+	// .st21
+	// 	font-family: 'MyriadPro' ,sans-serif
+
+	// .st22
+	// 	font-size: 11.44px
+
+	// .st23
+	// 	display: none
+	// 	fill: #D24A43
+
+	// .st24
+	// 	fill: #e23c31!important
+	// 	font-weight: 700
+		
+	// .st25
+	// 	font-size: 27.4585px
+  //   fill: #e23c31!important
+  //   font-family: MyriadPro,sans-serif
+	// .st26
+	// 	display: inline
+	// 	fill: none
+	// 	stroke: #A24C46
+	// 	stroke-width: 2
+	// 	stroke-linecap: round
+	// 	stroke-linejoin: round
+
+	// .st27
+	// 	display: inline
+	// 	fill: #B3483F
+
+	// .st28
+	// 	display: inline
+	// 	fill: #556CAF
+
+	// .st29
+	// 	font-size: 11.4374px
+
+	// .st30
+	// 	fill: #556CAF
+
+	// .st31
+	// 	font-size: 27px
+	// 	line-height: 38px
+	// 	font-weight: 600
+
+	// .st32
+	// 	fill-rule: evenodd
+	// 	clip-rule: evenodd
+	// 	fill: #FFFFFF
+
+	// .st33
+	// 	display: none
+	// 	fill-rule: evenodd
+	// 	clip-rule: evenodd
+	// 	fill: #FFFFFF
+
+	// .st34
+	// 	fill: #181B1B
+
+	// .st35
+	// 	font-family: 'MyriadPro',sans-serif
+	// 	font-weight: 600
+	// 	font-size: 18px
+	// .st36
+	// 	display: none
+	// 	fill: #181B1B
+
+	// .st37
+	// 	display: none
+	// 	fill: #D85B9E
+
+	// .st38
+	// 	display: inline
+	// 	opacity: 0.5
+
+	// .st39
+	// 	display: inline
+	// 	fill: none
+	// 	stroke: #856DAC
+	// 	stroke-width: 5
+	// 	stroke-linecap: round
+	// 	stroke-linejoin: round
+	// 	stroke-miterlimit: 10
+.map_block
+	position: relative
+	p
+		font-size: 40px
+		position: absolute
+		top: 60px
+		left: 0
+		width: 100px
+		text-align: center
+		font-weight: 600
+.map-text_block
+	padding-left: 40px
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	h2
+		color: #fff
+		margin-bottom: 40px
+	p
+		margin-bottom: 40px
+.moskow_group
+	&:hover
+		.st2, .st4
+			fill: rgba(#000, .1)!important
+.contact_block-text strong
+	position: relative
+	z-index: 5
+.footer_menu
+	display: flex
+	flex-wrap: wrap
+	li
+		width: 45%
+	a
+		transition: all .3s ease
+		&:hover
+			color: $accent
+.footer_contact
+	a
+		&:hover
+			color: $accent
+.footer_phones
+	margin-bottom: -10px!important
+.post-type-post 
+	margin-bottom: 20px
+.post-content
+	line-height: 1.4
+.footer_news_intro
+	text-transform: none
+	margin-bottom: 10px!important
+.footer
+	.footer_news
+		a
+			margin-bottom: 5px
+			display: inline-block
+			transition: all .3s ease
+			&:hover
+				color: $accent
+.footer 
+	.copyright
+		p
+			a
+				display: block
+				text-decoration: underline
+				transition: all .3s ease
+				&:hover
+					color: $accent
+.news_title-main
+	font-size: 20px
+	color: #fff
+	padding-left: 20px
+	margin: 0
+.news_section-main
+	padding: 90px 0
+	.upcoming__details 
+		p
+			font-size: 14px
+.more_btn__block 
+	font-weight: normal
+	.fa
+		margin-left: 5px
+.upcoming__details
+	p
+		font-weight: 400
+		font-size: 16px
+.item-box > a
+	opacity: 1
+.navigation ul li a
+	font-size: 13px
+.certificat_section
+	padding: 90px 0
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+.certificate_slider
+	.owl-stage
+	.owl-item
+		transition: all .3s ease
+		transform: scale(0.8)
+		&.center
+			opacity: 1
+			transform: scale(1)
+.certificate_desk
+	position: absolute
+	top: 55%
+	z-index: 1
+	text-align: center
+	opacity: 0
+	padding: 20px
+.item-box
+	&:hover
+		&::after
+			background: rgba(#000, .6)
+		.certificate_desk
+			opacity: 1
+		.link_download
+			top: 50%
+			opacity: 1
+			transition: all 0.2s ease-out 0s
+			-webkit-transition: all 0.2s ease-out 0s
+
+.link_download
+	transition: all 0.2s linear 0s
+	-webkit-transition: all 0.2s linear 0s
+	height: 40px
+	position: absolute
+	top: 45%
+	left: 55%
+	color: #fff
+	z-index: 1
+	transform: translate(-50%,-50%)
+	-webkit-transform: translate(-50%,-50%)
+	opacity: 0
+	a
+		width: 40px
+		height: 40px
+		line-height: 40px
+		text-align: center
+		background: #fab915
+		font-size: 17px
+		color: #fff
+.link-zoom
+	top: 45%
+	left: 40%
+.btn
+	border-radius: 0 !important
+main
+	padding-bottom: 90px
+.first_screen
+	height: 400px
+.first_screen_title
+	padding-top: 160px
+.breadcrumbs
+	ul
+		display: flex
+		color: #fff
+		margin: 0
+		padding: 0
+	li
+		list-style-type: none
+		margin-left: 10px
+		&:first-child
+			margin-left: 0
+	a
+		color: #fff
+.page_title
+	padding-top: 40px
+	margin-bottom: 40px
+.vacancies_cart
+	display: flex
+	justify-content: space-between
+	margin-bottom: 70px
+	h3
+		margin-top: 0
+	&:nth-child(even)
+		flex-direction: row-reverse
+		.vacancies_img
+			margin-right: 0
+			margin-left: 60px
+			padding-right: 0px
+			padding-left: 8px
+			&::before
+				right: 8px
+				bottom: 0
+				left: 0px
+.vacancies_img
+	margin-right: 60px
+	padding-right: 8px
+	padding-bottom: 8px
+	position: relative
+	align-self: start
+	z-index: 2
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		right: 0
+		bottom: 0
+		left: 8px
+		top: 8px
+		background-color: #cfcfcf
+		z-index: 0
+	img
+		max-width: 280px
+		position: relative
+.vacancies_map_link
+	color: $accent
+	padding-left: 10px
+	display: inline-block
+	vertical-align: top
+	.icon
+		display: inline-block
+		vertical-align: middle
+.vacancies_description
+	flex-grow: 1
+.vacancies_metro
+	display: flex
+	flex-wrap: wrap
+	margin: 0
+	padding: 0
+	margin-bottom: 1rem
+	li
+		list-style-type: none
+		padding-left: 25px
+		position: relative
+		margin-right: 30px
+		&:last-child
+			margin-right: 0
+		i
+			display: inline-block
+			width: 15px
+			height: 15px
+			position: absolute
+			left: 0
+			top: 8px
+			border-radius: 50%
+.accordion__item
+	background-color: #f2ede9
+	margin-bottom: 10px
+.accordion__open
+	padding-top: 10px
+	padding-bottom: 10px
+	padding-left: 23px
+	padding-right: 70px
+	border-bottom: 2px solid #e6e1dd
+	position: relative
+	cursor: pointer
+.accordion__text
+	padding: 10px 10px 20px 23px
+	ul
+		margin: 0
+		padding: 0
+		li
+			list-style-type: none
+			position: relative
+			padding-left: 15px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				width: 7px
+				height: 7px
+				border-radius: 50%
+				background-color: $accent
+				left: 0
+				top: 13px
+.icon-down-dir, .icon-up-dir
+	display: block
+	width: 54px
+	height: 54px
+	background-color: $accent
+	position: absolute
+	right: 0
+	top: 0
+	&::before, &::after
+		content: ''
+		position: absolute
+		width: 20px
+		height: 4px
+		display: block
+		background-color: #fff
+		left: 50%
+		margin-left: -10px
+		top: 50%
+		margin-top: -2px
+		transition: all .3s ease
+	&::after
+		transform: rotate(270deg)
+.icon-up-dir
+	&::before
+		transform: rotate(-180deg)
+	&::after
+		transform: rotate(0deg)
+.sand-page
+.sand-page_header
+	position: relative
+	margin-bottom: 40px
+.sand_intro-margin
+	margin-bottom: 40px
+.sand-page_intro
+	background-color: $accent
+	padding: 60px 30px 50px 30px
+	margin-top: -90px
+	font-size: 16px
+	position: relative
+	margin-right: 20px
+	h4
+		margin-bottom: 25px
+		text-align: center
+	table
+		padding: 0
+		margin: 0
+	tr
+		vertical-align: top
+	td
+		padding-bottom: 15px
+		line-height: 1.2
+		vertical-align: top
+		&:first-of-type
+			width: 20%
+		&:nth-of-type(2)
+			width: 30%
+			text-align: center
+	.button_center
+		margin-top: 20px
+.sand_price
+	display: flex
+	justify-content: space-between
+	align-items: baseline
+	margin-top: 15px
+	flex-wrap: wrap
+	.sand_price_label
+		width: 100%
+		font-size: 14px
+	span
+		display: inline-block
+		margin-right: 20px
+	p
+		font-size: 33px
+		strong
+			font-size: 50px
+.quarry-map_block
+	padding-top: 90px
+.quarry_desc_wrapper
+	display: flex
+	justify-content: space-between
+	margin-bottom: 60px
+	flex-wrap: wrap
+.quarry_desc
+	width: 47%
+	h3
+		margin-bottom: 30px
+.sand_body
+	header.header-1.header_tran.fancybox-margin
+		display: none
+.quarry_gallery
+	margin-right: 20px
+	ul
+		margin: 0
+		padding: 0
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+	li
+		list-style-type: none
+		width: 49%
+		margin-bottom: 2%
+		a
+			display: block
+
+		img
+			object-fit: cover
+			width: 100%
+.sand_row
+	margin-bottom: 60px
+.no-banner
+	main
+		padding-top: 160px
+	#header.header-1
+		background-color: #000
+	h1
+		font-size: 30px
+		font-weight: 700
+		margin-top: 0
+		color: #222
+.news_page_b
+	h1
+		font-size: 30px
+		font-weight: 700
+		margin-top: 0
+		color: #222
+.news_parent_title
+	font-size: 60px
+	margin-top: 0
+	position: relative
+	font-family: 'Montserrat', sans-serif
+	font-weight: 500
+.page-signin 
+	.form-group-mt-40
+		margin-bottom: 40px
+.crumbs-no-banner
+	ul
+		margin: 0
+		padding: 0
+	li
+		padding: 0
+		list-style-type: none
+		display: inline-block
+		a, span
+			font-size: 14px
+.quarry_body
+	.page_title
+		margin-bottom: 0
+	.sand_row
+		margin-bottom: 0
+	.quarry_gallery
+		margin-right: 0
+	main
+		padding-bottom: 0
+.quarry_title-block
+	margin-bottom: 30px
+.quarry_map
+	height: 450px
+	background-image: url()
+.quarry_intro
+	background-color: $accent
+	display: flex
+	flex-direction: column
+	justify-content: center
+	padding: 50px 30px
+	width: 33%
+	float: right
+	margin-left: 30px
+	margin-bottom: 30px
+	table
+		margin-bottom: 0px
+	h3
+		font-size: 25px
+		margin-bottom: 30px
+	td
+		width: 50%
+		line-height: 1.2
+		padding-bottom: 15px
+	.map_scroll_btn
+		margin-top: 30px
+.quarry_slider
+	padding: 90px 0
+.mediabox-close
+	right: -24px
+.owl-item
+	cursor: grab
+.map_section-delivery-page
+	color: #222
+	h2
+		color: #222
+.quarry-video
+	padding: 0 0 90px 0
+.map_section_hourse
+	font-family: 'Montserrat', sans-serif
+.quarry-video_block
+	position: relative
+	height: 500px
+	background-repeat: no-repeat
+	background-position: center
+	background-size: 100%
+	transition: all 1s linear
+	transform-style: preserve-3d
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+		background-color: rgba(#000, .6)
+		opacity: 0
+		transition: all .3s ease
+	&:hover
+		background-size: 110%
+		&::after
+			opacity: 1
+		.video_icon
+			transform: scale(0.8)
+
+
+
+	a
+		display: block
+		width: 100%
+		height: 100%
+		position: relative
+		z-index: 3
+		.video_icon
+			width: 80px
+			height: 80px
+			border-radius: 50%
+			background-color: $accent
+			position: absolute
+			left: 50%
+			margin-left: -40px
+			top: 50%
+			margin-top: -40px
+			display: flex
+			justify-content: center
+			align-items: center
+			transition: all 1s linear
+			transform: scale(1)
+			.icon
+				color: #fff
+				font-size: 35px
+				margin-left: 8px
+.stop-scroll
+	#header.header-1
+		display: none
+.quarry_content
+	padding: 90px 0
+.news_images
+	margin-bottom: 40px
+	margin-right: 30px
+	max-width: 450px
+	float: left
+blockquote
+	background-color: $accent
+	padding: 20px 30px
+	color: #fff
+	p
+		&::before
+			content: "\f10d"
+			font-family: FontAwesome
+			padding-right: 7px
+			font-size: 12px
+		&::after
+			content: "\f10e"
+			font-family: FontAwesome
+			padding-left: 7px
+			font-size: 12px
+	p:last-child
+		margin-bottom: 0
+.neighbors
+	display: flex
+	justify-content: space-between
+	margin-top: 60px
+.neighbors_prev
+	justify-content: flex-start
+	.neighbors_page_name
+		text-align: right
+.neighbors_prev_content
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-end
+	margin-right: 20px
+.neighbors_next
+	justify-content: flex-end
+.neighbors_next_content
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	margin-left: 20px
+.neighbors_page_name
+	font-size: 14px
+	line-height: 16px
+.neighbors_up
+	align-self: center
+.neighbors_navigation
+	display: flex
+	width: 350px
+	img
+		align-self: start
+		margin-top: 10px
+	&:hover
+		.neighbors_page_name
+			color: #222
+.pagination-nav
+	ul
+		li.page_empty
+			opacity: 0.6
+			span
+				display: block
+				border: 1px solid #222
+				color: #222
+				height: 36px
+				width: 36px
+				line-height: 34px
+				text-align: center
+				font-size: 14px
+.contact-form
+	input
+		display: block
+		height: 46px
+		margin-bottom: 32px
+		width: 100%
+		font-size: 14px
+		padding: 0 15px
+		border: 1px solid #e5e5e5
+		color: #878787
+		background: transparent
+		-webkit-appearance: none
+		border-radius: 0
+.line-clamp-3
+	overflow: hidden
+	display: -webkit-box
+	-webkit-box-orient: vertical
+	-webkit-line-clamp: 2
+	p
+		margin-bottom: 0
+.line-clamp-2
+	overflow: hidden
+	display: -webkit-box
+	-webkit-box-orient: vertical
+	-webkit-line-clamp: 2
+	p
+		margin-bottom: 0
+.line-clamp-1
+	overflow: hidden
+	display: -webkit-box
+	-webkit-box-orient: vertical
+	-webkit-line-clamp: 1
+	p
+		margin-bottom: 0
+.delivery_text-block
+.delivery_image-block
+	position: relative
+	padding-left: 8px
+	padding-bottom: 8px
+	z-index: 2
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		right: 8px
+		bottom: 0
+		left: 0px
+		top: 8px
+		background-color: #cfcfcf
+		z-index: 0
+
+.delivery_content
+	padding-top: 48px
+	.delivery_image
+		position: relative
+		z-index: 2
+	a
+		color: $accent
+		text-decoration: underline
+	ul
+		padding-left: 20px
+.contact_main
+	padding-bottom: 0
+.contacts_page
+	padding-bottom: 90px
+.contact-info .info li
+	border-bottom: none
+	overflow: hidden
+	padding: 0px
+.contact-info .info li.info_li
+	list-style: none
+	border-bottom: 1px solid #eeeeee
+	overflow: hidden
+	padding: 15px 0px
+.contact-info .info li .content p
+	color: #222
+	font-size: 18px
+.contact-info 
+	.info 
+		li.info_li
+			ul
+				margin-bottom: 20px
+			li
+				font-size: 16px
+				padding-left: 20px
+				position: relative
+.contacts_icon-adress
+	li
+		&::before
+			content: "\f041"
+			font-family: FontAwesome
+			display: block
+			position: absolute
+			width: 20px
+			height: 20px
+			left: 0
+			color: $accent
+.contacts_icon-adress
+	li.open-hourse-contact
+		&::before
+			content: "\f017"
+			font-family: FontAwesome
+			display: block
+			position: absolute
+			width: 20px
+			height: 20px
+			left: 0
+			color: $accent
+.contacts_icon-phone
+	li
+		&::before
+			content: "\f095"
+			font-family: FontAwesome
+			display: block
+			position: absolute
+			width: 20px
+			height: 20px
+			left: 0
+			color: $accent
+	.mail_icon_li
+		&::before
+			content: "\f0e0"
+			font-family: FontAwesome
+			display: block
+			position: absolute
+			width: 20px
+			height: 20px
+			left: 0
+			color: $accent
+.contacts_icon-mail
+	li
+		&::before
+			content: "\f0e0"
+			font-family: FontAwesome
+			display: block
+			position: absolute
+			width: 20px
+			height: 20px
+			left: 0
+			color: $accent
+.df
+	display: flex
+.df-capthca
+	flex-direction: column
+	align-items: flex-start
+.header_row
+	width: 100%
+.header_row_list
+	display: flex
+	width: 100%
+	justify-content: space-between
+.popapOpen
+	overflow: hidden
+	#header.header-1
+		display: none
+.custom-check
+	flex-shrink: 0
+.page-signin .card .card-content form
+	padding: 30px 40px
+	padding-bottom: 55px
+	position: relative
+	button
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+.hidden_block
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 99999
+	background-color: transparent
+	overflow: auto
+	transition: transform .3s ease
+	transform: scale(0)
+	display: none
+	.page-signin
+		padding: 120px 0
+	.main-body
+	&.active
+		display: block
+		transform: scale(1)
+		background-color: rgba(#000, .8)
+.page-signin .ui-input-group .form-control
+	border-radius: 0 !important
+.ui-title_group
+	position: relative
+	display: flex
+	flex-direction: column
+	label
+		position: relative
+		top: 0
+		right: 0
+article.ul_custom
+	a
+		color: $accent
+		text-decoration: underline
+.ul_custom
+	ul
+		margin: 0
+		padding: 0
+		li
+			padding: 0
+			padding-left: 20px
+			position: relative
+			list-style-type: none
+			margin-bottom: 15px
+			&::before
+				content: ''
+				display: block
+				width: 6px
+				height: 6px
+				border-radius: 20px
+				background-color: $accent
+				position: absolute
+				left: 0
+				top: 8px
+	ol
+		margin-left: 30px
+		li
+			list-style-type: none
+			margin-bottom: 0
+			padding-left: 20px
+			position: relative
+			list-style-type: none
+			position: relative
+			&::before
+				content: ''
+				display: block
+				width: 6px
+				height: 6px
+				border-radius: 20px
+				background-color: $accent
+				position: absolute
+				left: 0
+				top: 13px
+.heading-box.heading-box-left
+	text-align: left
+	margin-bottom: 30px
+.partner_slide img
+	transition: all .3s ease
+	filter: gray
+	filter: grayscale(100%)
+	cursor: pointer
+	&:hover
+		filter: none
+.partner_slider
+	padding: 90px 0
+	.owl-prev, .owl-next
+		background: #fab915
+	.ion-ios-arrow-back:before, .ion-ios-arrow-forward:before
+		color: #fff
+.advantages_icon
+	padding: 90px 0
+	background-color: $accent
+	h2, .advantages_icon_title
+		color: #222
+		text-align: center
+		margin-bottom: 50px
+.advantages_icon_row
+	margin: 0
+	padding: 0
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	color: #222
+	li
+		list-style-type: none
+		padding: 0 15px
+		text-align: center
+		h4
+			font-size: 18px
+		.icon
+			font-size: 75px
+.about_outro
+	padding-top: 90px
+	padding-bottom: 40px
+.partner_slide
+	background-color: #fff
+	padding: 20px
+	min-height: 293px
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	p
+		flex-basis: 98px
+	&:hover
+		img
+			filter: none
+	img
+		margin-bottom: 30px
+.main-body
+	opacity: 0
+	position: relative
+
+.main-body.active
+	animation: fade-in-top 0.6s 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+
+@keyframes fade-in-top
+	0%
+		transform: translateY(-50px)
+		opacity: 0
+
+	100%
+		transform: translateY(0)
+		opacity: 1
+.popapClose
+	background-color: transparent
+	width: 40px
+	height: 40px
+	position: absolute
+	top: -30px
+	right: -20px
+	padding: 0
+	&::before, &::after
+		content: ''
+		display: block
+		width: 40px
+		height: 2px
+		background-color: #fff
+		position: absolute
+		left: 0
+		top: 17px
+	&::after
+		transform: rotate(45deg)
+	&::before
+		transform: rotate(-45deg)
+
+.work
+	.link-zoom
+		left: 50%
+		z-index: 30
+	.container-filter li 
+		a
+			background-color: #fff
+			&:hover
+				background-color: $accent!important
+				color: #fff
+			&.active
+				background-color: $accent!important
+				color: #fff
+	.gallery-heading
+		padding-right: 15px
+		h4
+			overflow: hidden
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 4
+			margin-bottom: 20px
+			line-height: 1.4
+			font-weight: 500
+			letter-spacing: .8px
+.fancybox-lock
+	#header.header-1
+		display: none
+.fancybox-skin
+	background: transparent
+.slider_project
+	.project__box_details
+		width: 85%
+		h3
+			font-family: Roboto, sans-serif
+			font-size: 18px
+			font-weight: 400
+			overflow: hidden
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 4
+.no-banner
+	.big-font
+		line-height: 1.2
+		font-size: 130px
+
+.selectize-input
+	border-color: $accent
+	box-shadow: none
+.selectize-dropdown
+	border-color: $accent!important
+	border-radius: 0 !important
+.option:hover
+	background-color: $accent
+	border-radius: 0 !important
+.ui-input-group.ui-select_group
+	margin-bottom: 0
+.option.selected.active
+	background-color: rgba($accent, .7)
+.selectize-input.focus
+	box-shadow: none
+.selectize-control.single .selectize-input:after
+	width: 20px
+	height: 20px
+	border: none
+	top: 10px
+	background-image: url(../img/icons/down-arrow.png)
+	background-size: 15px
+	background-repeat: no-repeat
+	background-position: center
+	transition: all .1s ease
+.selectize-control.single .selectize-input.dropdown-active:after
+	background-image: url(../img/icons/up-arrow.png)
+.ui-price_group
+	position: relative
+	.pice_out
+		position: absolute
+		right: 0
+		bottom: 0
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button 
+		-webkit-appearance: none
+	input[type='number']
+		-moz-appearance: textfield
+.delivery_minimal
+	font-size: 14px
+	display: none
+.quarry_chouse_field
+	a
+		font-size: 14px
+		text-decoration: underline
+		color: $accent
+.adress_field_intro
+	font-size: 14px
+	line-height: 20px
+	margin-top: 15px
+.adress_field
+	display: none
+.hidden_block-product
+	.main-body
+		max-width: 550px
+		width: 100%
+	.checkbox-field
+		a
+			display: block
+.Phone 
+	position: fixed
+	right: 70px
+	bottom: 70px
+	display: block
+	margin: 0
+	width: 70px
+	height: 70px
+	font-size: 25vmin
+	background-color: $accent
+	border-radius: 0.5em
+	box-shadow: 0 0 0 0em rgba($accent, 0), 0em 0.05em 0.1em rgba($accent, 0.2)
+	transform: translate3d(0, 0, 0) scale(1)
+	cursor: pointer
+	z-index: 999
+
+
+.Phone::before,
+.Phone::after 
+	position: absolute
+	
+
+
+.Phone::before
+	content: ""
+	top: 0
+	left: 0
+	width: 70px
+	height: 70px
+	background-color: rgba($accent, 0.1)
+	border-radius: 100%
+	opacity: 1
+	transform: translate3d(0, 0, 0) scale(0)
+
+
+.Phone::after
+	content: '\f095'
+	font-family: FontAwesome
+	font-size: 40px
+	top: 50%
+	left: 50%
+	margin-top: -14px
+	margin-left: -19px
+	width: 70px
+	height: 70px
+	transform: translate3d(0, 0, 0)
+	color: #fff
+
+
+.Phone.is-animating 
+	animation: phone-outer 3000ms infinite
+	
+	&::before 
+		animation: phone-inner 3000ms infinite
+	
+	
+	&::after 
+		animation: phone-icon 3000ms infinite
+	
+
+
+@keyframes phone-outer 
+	0% 
+		transform: translate3d(0, 0, 0) scale(1)
+		box-shadow: 0 0 0 0em rgba($accent, 0), 0em 0.05em 0.1em rgba(#000000, 0.2)
+	
+	33.3333% 
+		transform: translate3d(0, 0, 0) scale(1.1)
+		box-shadow: 0 0 0 0em rgba($accent, 0.1), 0em 0.05em 0.1em rgba(#000000, 0.5)
+	
+	66.6666% 
+		transform: translate3d(0, 0, 0) scale(1)
+		box-shadow: 0 0 0 0.5em rgba($accent, 0), 0em 0.05em 0.1em rgba(#000000, 0.2)
+	
+	100% 
+		transform: translate3d(0, 0, 0) scale(1)
+		box-shadow: 0 0 0 0em rgba($accent, 0), 0em 0.05em 0.1em rgba(#000000, 0.2)
+	
+
+
+@keyframes phone-inner 
+	0% 
+		opacity: 1
+		transform: translate3d(0, 0, 0) scale(0)
+	
+	33.3333% 
+		opacity: 1
+		transform: translate3d(0, 0, 0) scale(0.9)
+	
+	66.6666% 
+		opacity: 0
+		transform: translate3d(0, 0, 0) scale(0)
+	
+	100% 
+		opacity: 0
+		transform: translate3d(0, 0, 0) scale(0)
+	
+
+
+@keyframes phone-icon
+	0%	
+		transform: translate3d(0em, 0, 0)
+	2%
+		transform: translate3d(0.01em, 0, 0)
+	4%
+		transform: translate3d(-0.01em, 0, 0)
+	6%
+		transform: translate3d(0.01em, 0, 0)
+	8%
+		transform: translate3d(-0.01em, 0, 0)
+	10%
+		transform: translate3d(0.01em, 0, 0)
+	12%
+		transform: translate3d(-0.01em, 0, 0)
+	14%
+		transform: translate3d(0.01em, 0, 0)
+	16%
+		transform: translate3d(-0.01em, 0, 0)
+	18%
+		transform: translate3d(0.01em, 0, 0)
+	20%
+		transform: translate3d(-0.01em, 0, 0)
+	22%
+		transform: translate3d(0.01em, 0, 0)
+	24%
+		transform: translate3d(-0.01em, 0, 0)
+	26%
+		transform: translate3d(0.01em, 0, 0)
+	28%
+		transform: translate3d(-0.01em, 0, 0)
+	30%
+		transform: translate3d(0.01em, 0, 0)
+	32%
+		transform: translate3d(-0.01em, 0, 0)
+	34%
+		transform: translate3d(0.01em, 0, 0)
+	36%
+		transform: translate3d(-0.01em, 0, 0)
+	38%
+		transform: translate3d(0.01em, 0, 0)
+	40%
+		transform: translate3d(-0.01em, 0, 0)
+	42%
+		transform: translate3d(0.01em, 0, 0)
+	44%
+		transform: translate3d(-0.01em, 0, 0)
+	46%
+		transform: translate3d(0em, 0, 0)
+.form-field
+	margin-bottom: 32px
+footer
+	.form-field
+		margin-bottom: 0
+.ajax_form 
+	span.error
+		font-size: 14px
+.contact-form 
+	input
+		margin-bottom: 0
+	.checkbox-field
+		text-align: left
+.succes_form
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: #fff
+	display: flex
+	align-items: center
+	justify-content: center
+	z-index: -1
+	opacity: 0
+	padding: 20px
+	text-align: center
+	strong
+		display: block
+		text-align: center
+		font-weight: normal
+		color: $accent
+	&.active
+		z-index: 66
+		animation: succes 0.6s  cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+.no-required
+	padding-top: 10px
+	label
+		font-size: 14px!important
+@keyframes succes
+	0%
+		transform: translateY(-50px)
+		opacity: 0
+
+	100%
+		transform: translateY(0)
+		opacity: 1
+.consultation_form
+	.succes_form
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 99999
+		background-color: transparent
+		overflow: auto
+		transition: all .3s ease
+		transform: scale(0)
+		display: flex
+		align-items: center
+		justify-content: center
+		&.active
+			transform: scale(1)
+			background-color: rgba(#000, .8)
+			.succes_form_text
+				animation: succes-const 0.6s  cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+
+	@keyframes succes-const
+		0%
+			transform: translateY(-50px)
+			opacity: 0
+
+		100%
+			transform: translateY(0)
+			opacity: 1
+	.succes_form_text
+		background-color: #fff
+		padding: 50px 60px
+		text-align: center
+		font-size: 20px
+		opacity: 0
+		color: #222
+		strong
+			display: block
+			text-align: center
+			font-weight: normal
+			color: $accent
+			font-size: 24px
+.providing 
+	background-attachment: fixed
+	background-position: center center
+	background-size: cover
+	width: 100%
+	position: relative
+	&::after
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.82)
+		content: ''
+.doc-dow-block
+	a
+		margin-right: 15px
+		margin-bottom: 15px
+	.icon
+		font-size: 25px
+		transform: translateY(7px)
+	.icon-googledocs
+		font-size: 20px
+		transform: translateY(4px)
+.hidden_title
+	font-size: 0
+	overflow: hidden
+	margin: 0
+	padding: 0
+	line-height: 0
+.sand-tabs
+	button:disabled
+		cursor: inherit
+		opacity: 0.5
+		background-color: #7f7f7f
+		color: #fff!important
+		&::before
+			display: none !important
+.sand_tabs
+	background-color: #f0f0f0
+	width: 100%
+	display: flex
+.sand_tabs__header
+	margin: 0
+	padding: 0
+	flex-shrink: 0
+	li
+		list-style-type: none
+		padding: 30px
+		margin: 0
+		font-family: 'Montserrat', sans-serif
+		font-weight: bold
+		cursor: pointer
+		transition: all .2s ease
+		&.active, &:hover
+			background-color: #222222
+			color: #fff
+.sand_tabs__content
+	padding: 28px 60px
+	width: 100%
+	display: none
+	&.active
+		display: flex
+	ul
+		padding: 0
+		margin: 0
+	li
+		list-style-type: none
+		padding: 0
+		margin: 0
+		
+.sand_tabs__title
+	font-family: 'Montserrat', sans-serif
+	font-size: 30px
+	color: #222
+	margin-bottom: 25px
+	padding-top: 5px
+	font-weight: bold
+.sand_tabs__content--left
+	flex-grow: 1
+.sand_tabs__content--right
+	text-align: right
+	flex-grow: 1
+	flex-shrink: 0
+.btn-text
+	color: #222!important
+	&:hover
+		color: #fff!important
+.btn-text.btn-dark
+	color: #fff!important
+	&:hover
+		color: #fff!important
+.just_text
+	color: #222!important
+
+.vertical-slider--career
+	.swiper-container
+		padding-right: 15px
+	.swiper-wrapper
+		height: 420px
+	.swiper-pagination
+		right: 0
+	.swiper-pagination-bullet
+		width: 9px
+		height: 9px
+		background-color: $accent
+		opacity: 1
+		&.swiper-pagination-bullet-active
+			background-color: #000
+	.quarry_gallery
+		height: 100%
+		display: flex
+		margin-right: 0
+		a
+			height: 100%
+		img
+			height: 100%
+.tabs--animation
+	&__wrapper
+		height: 500px
+		transition: all .4s ease
+	.tabs__content
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		opacity: 0
+		visibility: hidden
+		&.active
+			opacity: 1
+			visibility: visible
+		&.animation-out
+			animation: tab-out
+			animation-duration: .4s
+			animation-timing-function: linear
+		&.animation-in
+			animation: tab-in
+			animation-duration: .9s
+			animation-timing-function: linear
+
+
+@keyframes tab-out
+	0%
+		opacity: 1
+		transform: translateX(0)
+
+	100%
+		opacity: 0
+		transform: translateX(-30px)
+
+@keyframes tab-in
+	0%
+		opacity: 0
+		transform: translateX(60px)
+
+	40%
+		opacity: 0
+		transform: translateX(60px)
+
+	100%
+		opacity: 1
+		transform: translateX(0px)
+
+@import "media"
+
+
+
+	
